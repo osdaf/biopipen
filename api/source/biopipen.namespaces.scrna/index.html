@@ -1,0 +1,1009 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.2.3">
+    
+    
+      
+        <title>biopipen.namespaces.scrna - biopipen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    
+      <link rel="stylesheet" href="../../../css/mkapi-common.css">
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#biopipennamespacesscrna" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="biopipen" class="md-header__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            biopipen
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              biopipen.namespaces.scrna
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="biopipen" class="md-nav__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    biopipen
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Pipelines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pipelines" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pipelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pipelines/scrna_metabolic/" class="md-nav__link">
+        scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        biopipen.core
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.core" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.core
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core/" class="md-nav__link">
+        biopipen.core
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.defaults/" class="md-nav__link">
+        biopipen.core.defaults
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.config/" class="md-nav__link">
+        biopipen.core.config
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.proc/" class="md-nav__link">
+        biopipen.core.proc
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        biopipen.namespaces
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.namespaces" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.namespaces
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces/" class="md-nav__link">
+        biopipen.namespaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.tcr/" class="md-nav__link">
+        biopipen.namespaces.tcr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.gsea/" class="md-nav__link">
+        biopipen.namespaces.gsea
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.rnaseq/" class="md-nav__link">
+        biopipen.namespaces.rnaseq
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.scrna_metabolic/" class="md-nav__link">
+        biopipen.namespaces.scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.vcf/" class="md-nav__link">
+        biopipen.namespaces.vcf
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.web/" class="md-nav__link">
+        biopipen.namespaces.web
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.misc/" class="md-nav__link">
+        biopipen.namespaces.misc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bed/" class="md-nav__link">
+        biopipen.namespaces.bed
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.gene/" class="md-nav__link">
+        biopipen.namespaces.gene
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.plot/" class="md-nav__link">
+        biopipen.namespaces.plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bcftools/" class="md-nav__link">
+        biopipen.namespaces.bcftools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bam/" class="md-nav__link">
+        biopipen.namespaces.bam
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.scrna/" class="md-nav__link">
+        biopipen.namespaces.scrna
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.csv/" class="md-nav__link">
+        biopipen.namespaces.csv
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CHANGELOG/" class="md-nav__link">
+        Change log
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#biopipennamespacesscrna" class="md-nav__link">
+    biopipen.namespaces.scrna
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/pwwang/biopipen/edit/master/docs/api/source/biopipen.namespaces.scrna.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <div class="mkapi-node">
+<h1 id="" class="mkapi-object mkapi-object-code plain">
+<span class="mkapi-object-kind mkapi-object-kind-code">SOURCE CODE</span>
+<span class="mkapi-object-prefix">biopipen.namespaces.</span><span class="mkapi-object-name">scrna</span>
+<span id="biopipen.namespaces.scrna"></span><a class="mkapi-docs-link" href="../../biopipen.namespaces.scrna">DOCS</a>
+</h1>
+
+<div class="mkapi-code">
+<div class="codehilite"><pre><span></span><code><span class="sd">&quot;&quot;&quot;Tools to analyze single-cell RNA&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">..core.proc</span> <span class="kn">import</span> <span class="n">Proc</span>
+<span class="kn">from</span> <span class="nn">..core.config</span> <span class="kn">import</span> <span class="n">config</span>
+
+
+<span class="k">class</span> <span class="nc">SeuratLoading</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.SeuratLoading"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.SeuratLoading" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratLoading">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Seurat - Loading data</span>
+
+<span class="sd">    Deprecated, should be superseded by SeuratPreparing</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        metafile: The metadata of the samples</span>
+<span class="sd">            A tab-delimited file</span>
+<span class="sd">            Two columns are required:</span>
+<span class="sd">            - `Sample` to specify the sample names.</span>
+<span class="sd">            - `RNADir` to assign the path of the data to the samples</span>
+<span class="sd">              The path will be read by `Read10X()` from `Seurat`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        rdsfile: The RDS file with a list of Seurat object</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        qc: The QC filter for each sample.</span>
+<span class="sd">            This will be passed to `subset(obj, subset=&lt;qc&gt;)`.</span>
+<span class="sd">            For example</span>
+<span class="sd">            `nFeature_RNA &gt; 200 &amp; nFeature_RNA &lt; 2500 &amp; percent.mt &lt; 5`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;metafile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;rdsfile:file:{{in.metafile | stem}}.seurat.RDS&quot;</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;qc&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">}</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/SeuratLoading.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">SeuratPreparing</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.SeuratPreparing"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.SeuratPreparing" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratPreparing">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Seurat - Loading and preparing data</span>
+
+<span class="sd">    What will be done ?</span>
+<span class="sd">    https://satijalab.org/seurat/articles/pbmc3k_tutorial.html#standard-pre-processing-workflow-1)</span>
+<span class="sd">    1. All samples with be integrated as a single seurat object</span>
+<span class="sd">    2. QC</span>
+<span class="sd">    3. Normalization</span>
+<span class="sd">    4. Feature selection</span>
+<span class="sd">    5. Scaling</span>
+<span class="sd">    6. Linear dimensional reduction</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        metafile: The metadata of the samples</span>
+<span class="sd">            A tab-delimited file</span>
+<span class="sd">            Two columns are required:</span>
+<span class="sd">            - `Sample` to specify the sample names.</span>
+<span class="sd">            - `RNADir` to assign the path of the data to the samples</span>
+<span class="sd">              The path will be read by `Read10X()` from `Seurat`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        rdsfile: The RDS file with the Seurat object</span>
+<span class="sd">            Note that the cell ids are preficed with sample names</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        ncores: Number of cores to use</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;metafile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;rdsfile:file:{{in.metafile | stem}}.seurat.RDS&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;ncores&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">ncores</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/SeuratPreparing.R&quot;</span>
+    <span class="c1"># plugin_opts = {</span>
+    <span class="c1">#     &quot;report&quot;: &quot;file://../reports/scrna/SeuratPreparing.svelte&quot;</span>
+    <span class="c1"># }</span>
+
+
+<span class="k">class</span> <span class="nc">SeuratClustering</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.SeuratClustering"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.SeuratClustering" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratClustering">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Seurat - Determine the clusters</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        srtobj: The seurat object loaded by SeuratPreparing</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        rdsfile: The seurat object with cluster information</span>
+<span class="sd">        groupfile: A groupfile with cells for future analysis</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        FindClusters: Arguments to `FindClusters()`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;srtobj:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;rdsfile:file:{{in.srtobj | stem}}.RDS&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupfile:file:{{in.srtobj | stem | replace: &#39;.seurat&#39;, &#39;&#39;}}&quot;</span>
+        <span class="s2">&quot;.clusters.txt&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;FindClusters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;resolution&quot;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">}}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/SeuratClustering.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">GeneExpressionInvestigation</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.GeneExpressionInvestigation"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.GeneExpressionInvestigation" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.GeneExpressionInvestigation">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Investigation of expressions of genes of interest</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        srtobj: The seurat object loaded by SeuratPreparing</span>
+<span class="sd">        groupfile: The group of cells with the first column the groups and</span>
+<span class="sd">            rest the cells in each sample.</span>
+<span class="sd">            Or the subset conditions using metadata of `srtobj`</span>
+<span class="sd">            See `envs.group_subset`</span>
+<span class="sd">        genefiles: The genes to show their expressions in the plots</span>
+<span class="sd">        configfile: The configuration file (toml). See `envs`</span>
+<span class="sd">            If not provided, use `envs`</span>
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory with the plots</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        group_subset: Is the `in.groupfile` subset conditions using metadata</span>
+<span class="sd">            Or the groupfile as described.</span>
+<span class="sd">        name: The name to name the job. Otherwise the stem of groupfile</span>
+<span class="sd">            will be used</span>
+<span class="sd">        target: Which sample to pull expression from could be multiple</span>
+<span class="sd">        gopts: Options for `read.table()` to read the genefiles</span>
+<span class="sd">        plots: Plots to generate for this case</span>
+<span class="sd">            `boxplot`:</span>
+<span class="sd">            - `use`: Which gene file to use (1-based)</span>
+<span class="sd">            - `ncol`: Split the plot to how many columns?</span>
+<span class="sd">            - `res`, `height` and `width` the parameters for `png()`</span>
+<span class="sd">            `heatmap`:</span>
+<span class="sd">            - `use`: Which gene file to use (1-based)</span>
+<span class="sd">            - `res`, `height` and `width` the parameters for `png()`</span>
+<span class="sd">            - other arguments for `ComplexHeatmap::Heatmap()`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;srtobj:file, groupfile:file, genefiles:files, configfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.configfile | stem0}}.exprs&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="mi">4</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;group_subset&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;gopts&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;plots&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/GeneExpressionInvistigation.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/scrna/GeneExpressionInvistigation.svelte&quot;</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">DimPlots</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.DimPlots"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.DimPlots" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.DimPlots">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Seurat - Dimensional reduction plots</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        srtobj: The seruat object in RDS format</span>
+<span class="sd">        configfile: A toml configuration file with &quot;cases&quot;</span>
+<span class="sd">            If this is given, `envs.cases` will be overriden</span>
+<span class="sd">        name: The name of the job, used in report</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        cases: The cases for the dim plots</span>
+<span class="sd">            Keys are the names and values are the arguments to</span>
+<span class="sd">            `Seurat::Dimplots`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;srtobj:file, configfile:file, name:var&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.srtobj | stem}}.dimplots&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/DimPlots.R&quot;</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;cases&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;Ident&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;group.by&quot;</span><span class="p">:</span> <span class="s2">&quot;ident&quot;</span><span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/scrna/DimPlots.svelte&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;report_toc&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">MarkersFinder</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.MarkersFinder"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.MarkersFinder" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.MarkersFinder">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Find markers between different groups of cells</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        srtobj: The seurat object loaded by SeuratLoading</span>
+<span class="sd">        groupfile: The group of cells with first column the groups and</span>
+<span class="sd">            rest the cells in each sample.</span>
+<span class="sd">        casefile: The config file in TOML that looks like</span>
+<span class="sd">            &gt;&gt;&gt; [case1]</span>
+<span class="sd">            &gt;&gt;&gt; &quot;ident.1&quot; = &quot;ident.1&quot;</span>
+<span class="sd">            &gt;&gt;&gt; &quot;ident.2&quot; = &quot;ident.2&quot;</span>
+<span class="sd">            &gt;&gt;&gt; # other arguments for Seruat::FindMarkers()</span>
+<span class="sd">        name: The name of the jobs, mosted used in report</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory for the markers</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        ncores: Number of cores to use to parallelize the groups</span>
+<span class="sd">        cases: The cases to find markers for.</span>
+<span class="sd">            Values would be the arguments for `FindMarkers()`</span>
+<span class="sd">            If &quot;ALL&quot; or &quot;ALL&quot; in the keys, the process will run for all groups</span>
+<span class="sd">            in the groupfile. The other keys will be arguments to `FindMarkers`</span>
+<span class="sd">            When `ident.2` is not given and there is only one group or more</span>
+<span class="sd">            than two groups in groupfile, the rest cells in the object will</span>
+<span class="sd">            be used as the control</span>
+<span class="sd">            if it is `ident`, will igore the groupfile and find markers for all</span>
+<span class="sd">            idents.</span>
+<span class="sd">        dbs: The dbs to do enrichment analysis for significant markers</span>
+<span class="sd">            See below for all librarys</span>
+<span class="sd">            https://maayanlab.cloud/Enrichr/#libraries</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;srtobj:file, groupfile:file, name:var, casefile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.groupfile | stem0}}.markers&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;ncores&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">ncores</span><span class="p">,</span>
+        <span class="s2">&quot;cases&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;ALL&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">},</span>
+        <span class="s2">&quot;dbs&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s2">&quot;GO_Biological_Process_2021&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;GO_Cellular_Component_2021&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;GO_Molecular_Function_2021&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;KEGG_2021_Human&quot;</span><span class="p">,</span>
+        <span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/MarkersFinder.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/scrna/MarkersFinder.svelte&quot;</span><span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">SCImpute</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.SCImpute"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.SCImpute" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SCImpute">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Impute the dropout values in scRNA-seq data.</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        infile: The input file for imputation</span>
+<span class="sd">            Either a SeuratObject or a matrix of count/TPM</span>
+<span class="sd">        groupfile: The file to subset the matrix or label the cells</span>
+<span class="sd">            Could be an output from ImmunarchFilter</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outfile: The output matrix</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        infmt: The input format.</span>
+<span class="sd">            Either `seurat` or `matrix</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;infile:file, groupfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;outfile:file:{{in.infile | stem | replace: &#39;.seurat&#39;, &#39;&#39;}}.&quot;</span>
+        <span class="s2">&quot;{{envs.outfmt}}&quot;</span>
+    <span class="p">]</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;infmt&quot;</span><span class="p">:</span> <span class="s2">&quot;seurat&quot;</span><span class="p">,</span>  <span class="c1"># or matrix</span>
+        <span class="s2">&quot;outfmt&quot;</span><span class="p">:</span> <span class="s2">&quot;txt&quot;</span><span class="p">,</span>  <span class="c1"># or csv, rds</span>
+        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;count&quot;</span><span class="p">,</span>  <span class="c1"># or TPM</span>
+        <span class="s2">&quot;drop_thre&quot;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+        <span class="s2">&quot;kcluster&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>  <span class="c1"># or Kcluster</span>
+        <span class="s2">&quot;ncores&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">ncores</span><span class="p">,</span>
+        <span class="s2">&quot;refgene&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">ref</span><span class="o">.</span><span class="n">refgene</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/SCImpute.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">SeuratFilter</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.scrna.SeuratFilter"></span><a class="mkapi-docs-link" title="biopipen.namespaces.scrna.SeuratFilter" href="../../biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratFilter">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Filtering cells from a seurat object</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        srtobj: The seurat object in RDS</span>
+<span class="sd">        filterfile: The file with the filtering information</span>
+<span class="sd">            Either a group file (rows cases for filtering, columns are samples</span>
+<span class="sd">            or ALL for all cells with prefices), or config under</span>
+<span class="sd">            `subsetting` section in TOML with keys</span>
+<span class="sd">            and value that will be passed to `subset(...,subset = ...)`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        out: The filtered seurat object in RDS if `envs.multicase` is False,</span>
+<span class="sd">            otherwise the directory with the filtered seurat objects</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        filterfmt: `auto`, `subset` or `grouping`.</span>
+<span class="sd">            If `subset` then `in.filterfile` will be config in TOML, otherwise</span>
+<span class="sd">            if `grouping`, it is a groupfile. See `in.filterfile`.</span>
+<span class="sd">            If `auto`, test if there is `=` in the file. If so, it&#39;s `subset`</span>
+<span class="sd">            otherwise `grouping`</span>
+<span class="sd">        invert: Invert the selection?</span>
+<span class="sd">        multicase: If True, multiple seurat objects will be generated.</span>
+<span class="sd">            For `envs.filterfmt == &quot;subset&quot;`, each key-value pair will be a</span>
+<span class="sd">            case, otherwise, each row of `in.filterfile` will be a case.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;srtobj:file, filterfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        {</span><span class="si">%- i</span><span class="s2">f envs.multicase -%}</span>
+<span class="s2">            out:dir:{{in.filterfile | stem}}.seuratfiltered</span>
+<span class="s2">        {</span><span class="si">%- e</span><span class="s2">lif envs.filterfmt == &quot;subset&quot; -%}</span>
+<span class="s2">            out:file:{{in.filterfile | read | toml_loads | list | first}}.RDS</span>
+<span class="s2">        {</span><span class="si">%- e</span><span class="s2">lse -%}</span>
+<span class="s2">            out:file:{{in.filterfile | readlines | last | split | first}}.RDS</span>
+<span class="s2">        {</span><span class="si">%- e</span><span class="s2">ndif -%}</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;filterfmt&quot;</span><span class="p">:</span> <span class="s2">&quot;auto&quot;</span><span class="p">,</span>  <span class="c1"># subset or grouping</span>
+        <span class="s2">&quot;invert&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;multicase&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/scrna/SeuratFilter.R&quot;</span>
+</code></pre></div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.29db7785.min.js"></script>
+      
+        <script src="../../../js/mkapi.js"></script>
+      
+    
+  </body>
+</html>

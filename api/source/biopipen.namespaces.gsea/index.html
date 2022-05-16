@@ -1,0 +1,881 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.2.3">
+    
+    
+      
+        <title>biopipen.namespaces.gsea - biopipen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    
+      <link rel="stylesheet" href="../../../css/mkapi-common.css">
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#biopipennamespacesgsea" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="biopipen" class="md-header__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            biopipen
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              biopipen.namespaces.gsea
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="biopipen" class="md-nav__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    biopipen
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Pipelines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pipelines" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pipelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pipelines/scrna_metabolic/" class="md-nav__link">
+        scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        biopipen.core
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.core" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.core
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core/" class="md-nav__link">
+        biopipen.core
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.defaults/" class="md-nav__link">
+        biopipen.core.defaults
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.config/" class="md-nav__link">
+        biopipen.core.config
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.proc/" class="md-nav__link">
+        biopipen.core.proc
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        biopipen.namespaces
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.namespaces" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.namespaces
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces/" class="md-nav__link">
+        biopipen.namespaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.tcr/" class="md-nav__link">
+        biopipen.namespaces.tcr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.gsea/" class="md-nav__link">
+        biopipen.namespaces.gsea
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.rnaseq/" class="md-nav__link">
+        biopipen.namespaces.rnaseq
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.scrna_metabolic/" class="md-nav__link">
+        biopipen.namespaces.scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.vcf/" class="md-nav__link">
+        biopipen.namespaces.vcf
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.web/" class="md-nav__link">
+        biopipen.namespaces.web
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.misc/" class="md-nav__link">
+        biopipen.namespaces.misc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bed/" class="md-nav__link">
+        biopipen.namespaces.bed
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.gene/" class="md-nav__link">
+        biopipen.namespaces.gene
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.plot/" class="md-nav__link">
+        biopipen.namespaces.plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bcftools/" class="md-nav__link">
+        biopipen.namespaces.bcftools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bam/" class="md-nav__link">
+        biopipen.namespaces.bam
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.scrna/" class="md-nav__link">
+        biopipen.namespaces.scrna
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.csv/" class="md-nav__link">
+        biopipen.namespaces.csv
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CHANGELOG/" class="md-nav__link">
+        Change log
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#biopipennamespacesgsea" class="md-nav__link">
+    biopipen.namespaces.gsea
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/pwwang/biopipen/edit/master/docs/api/source/biopipen.namespaces.gsea.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <div class="mkapi-node">
+<h1 id="" class="mkapi-object mkapi-object-code plain">
+<span class="mkapi-object-kind mkapi-object-kind-code">SOURCE CODE</span>
+<span class="mkapi-object-prefix">biopipen.namespaces.</span><span class="mkapi-object-name">gsea</span>
+<span id="biopipen.namespaces.gsea"></span><a class="mkapi-docs-link" href="../../biopipen.namespaces.gsea">DOCS</a>
+</h1>
+
+<div class="mkapi-code">
+<div class="codehilite"><pre><span></span><code><span class="sd">&quot;&quot;&quot;Gene set enrichment analysis&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">..core.proc</span> <span class="kn">import</span> <span class="n">Proc</span>
+<span class="kn">from</span> <span class="nn">..core.config</span> <span class="kn">import</span> <span class="n">config</span>
+
+<span class="k">class</span> <span class="nc">GSEA</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.gsea.GSEA"></span><a class="mkapi-docs-link" title="biopipen.namespaces.gsea.GSEA" href="../../biopipen.namespaces.gsea/#biopipen.namespaces.gsea.GSEA">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Gene set enrichment analysis</span>
+
+<span class="sd">    Need `devtools::install_github(&quot;GSEA-MSigDB/GSEA_R&quot;)`</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        infile: The expression file.</span>
+<span class="sd">            Either a tab-delimited matrix or an RDS file (on envs.infmt)</span>
+<span class="sd">        metafile: The meta data file, determining the class of the samples</span>
+<span class="sd">            Two columns are required</span>
+<span class="sd">            Sample: The unique sample id for each sample</span>
+<span class="sd">            `[Group]`: The groups/classes of the samples</span>
+<span class="sd">        gmtfile: The GMT file of reference gene sets</span>
+<span class="sd">        configfile: The configuration file in TOML format to specify some envs.</span>
+<span class="sd">            `clscol`: If not provided, will use `envs.clscol`</span>
+<span class="sd">            `doc.string`: Documentation string used as a prefix</span>
+<span class="sd">            to name result files. If not provided, will use</span>
+<span class="sd">            `envs[&#39;doc.string&#39;]`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        inopts: The options for `read.table()` to read the input file</span>
+<span class="sd">            If `rds` will use `readRDS()`</span>
+<span class="sd">        metaopts: The options for `read.table()` to read the meta file</span>
+<span class="sd">        clscol: The column of the metafile determining the classes</span>
+<span class="sd">        doc.string: Documentation string used as a prefix to name result files</span>
+<span class="sd">            Other configs passed to `GSEA()` directly</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;infile:file, metafile:file, gmtfile:file, configfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.infile | stem}}.gsea&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;inopts&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;row.names&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+        <span class="s2">&quot;metaopts&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;row.names&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+        <span class="s2">&quot;clscol&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;doc.string&quot;</span><span class="p">:</span> <span class="s2">&quot;gsea_result&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/gsea/GSEA.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/gsea/GSEA.svelte&quot;</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">PreRank</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.gsea.PreRank"></span><a class="mkapi-docs-link" title="biopipen.namespaces.gsea.PreRank" href="../../biopipen.namespaces.gsea/#biopipen.namespaces.gsea.PreRank">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;PreRank the genes for GSEA analysis</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        infile: The expression file.</span>
+<span class="sd">            Either a tab-delimited matrix or an RDS file (on envs.inopts)</span>
+<span class="sd">        metafile: The meta data file, determining the class of the samples</span>
+<span class="sd">            Two columns are required</span>
+<span class="sd">            Sample: The unique sample id for each sample</span>
+<span class="sd">            `[Group]`: The groups/classes of the samples</span>
+<span class="sd">        configfile: The configuration file in TOML format to specify some envs.</span>
+<span class="sd">            `clscol`: If not provided, will use `envs.clscol`</span>
+<span class="sd">            `classes`: Defines pos and neg labels. If not provided, use will</span>
+<span class="sd">            `envs.classes`.</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outfile: The rank file with 1st column the genes, and the rest the</span>
+<span class="sd">            ranks for different class pairs provided by `envs.classes` or</span>
+<span class="sd">            `in.configfile`</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        inopts: Options for `read.table()` to read `in.infile`</span>
+<span class="sd">        metaopts: Options for `read.table()` to read `in.metafile`</span>
+<span class="sd">        method: The method to do the preranking.</span>
+<span class="sd">            Supported: `s2n(signal_to_noise)`, `abs_s2n(abs_signal_to_noise)`,</span>
+<span class="sd">            `t_test`, `ratio_of_classes`, `diff_of_classes` and</span>
+<span class="sd">            `log2_ratio_of_classes`.</span>
+<span class="sd">        clscol: The column of metafile specifying the classes of the samples</span>
+<span class="sd">        classes: The classes to specify the pos and neg labels.</span>
+<span class="sd">            It could be a pair of labels (e.g. `[&quot;CASE&quot;, &quot;CNTRL&quot;]`), where</span>
+<span class="sd">            the first one is pos and second is neg. Or you can have multiple</span>
+<span class="sd">            pairs of labels (e.g. `[[&quot;CASE1&quot;, &quot;CNTRL&quot;], [&quot;CASE2&quot;, &quot;CNTRL&quot;]]`)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;infile:file, metafile:file, configfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outfile:file:{{in.infile | stem}}.rank&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;inopts&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;row.names&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+        <span class="s2">&quot;metaopts&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;row.names&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+        <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;s2n&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;clscol&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;classes&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/gsea/PreRank.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">FGSEA</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.gsea.FGSEA"></span><a class="mkapi-docs-link" title="biopipen.namespaces.gsea.FGSEA" href="../../biopipen.namespaces.gsea/#biopipen.namespaces.gsea.FGSEA">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Gene set enrichment analysis using `fgsea`</span>
+
+<span class="sd">    Need `devtools::install_github(&quot;ctlab/fgsea&quot;)`</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        infile: The expression file.</span>
+<span class="sd">            Either a tab-delimited matrix or an RDS file (on envs.inopts)</span>
+<span class="sd">        metafile: The meta data file, determining the class of the samples</span>
+<span class="sd">            Two columns are required</span>
+<span class="sd">            Sample: The unique sample id for each sample</span>
+<span class="sd">            `[Group]`: The groups/classes of the samples</span>
+<span class="sd">        gmtfile: The GMT file of reference gene sets</span>
+<span class="sd">        configfile: The configuration file in TOML format to specify some envs.</span>
+<span class="sd">            `clscol`: If not provided, will use `envs.clscol`</span>
+<span class="sd">            `classes`: Defines pos and neg labels. If not provided, use will</span>
+<span class="sd">            `envs.classes`.</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        inopts: The options for `read.table()` to read the input file</span>
+<span class="sd">            If `rds` will use `readRDS()`</span>
+<span class="sd">        metaopts: The options for `read.table()` to read the meta file</span>
+<span class="sd">        method: The method to do the preranking.</span>
+<span class="sd">            Supported: `s2n(signal_to_noise)`, `abs_s2n(abs_signal_to_noise)`,</span>
+<span class="sd">            `t_test`, `ratio_of_classes`, `diff_of_classes` and</span>
+<span class="sd">            `log2_ratio_of_classes`.</span>
+<span class="sd">        clscol: The column of metafile specifying the classes of the samples</span>
+<span class="sd">        classes: The classes to specify the pos and neg labels.</span>
+<span class="sd">            It could be a pair of labels (e.g. `[&quot;CASE&quot;, &quot;CNTRL&quot;]`), where</span>
+<span class="sd">            the first one is pos and second is neg. Or you can have multiple</span>
+<span class="sd">            pairs of labels (e.g. `[[&quot;CASE1&quot;, &quot;CNTRL&quot;], [&quot;CASE2&quot;, &quot;CNTRL&quot;]]`)</span>
+<span class="sd">        top: Do gsea table and enrich plot for top N pathways. If it is &lt; 1,</span>
+<span class="sd">            will apply it to `padj`</span>
+<span class="sd">        `&lt;rest&gt;`: Rest arguments for `fgsea()`</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;infile:file, metafile:file, gmtfile:file, configfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.infile | stem}}.fgsea&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;inopts&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;row.names&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+        <span class="s2">&quot;metaopts&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;header&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s2">&quot;row.names&quot;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">},</span>
+        <span class="s2">&quot;method&quot;</span><span class="p">:</span> <span class="s2">&quot;s2n&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;clscol&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;classes&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;top&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+        <span class="s2">&quot;ncores&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">ncores</span><span class="p">,</span>
+        <span class="s2">&quot;minSize&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="s2">&quot;maxSize&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="s2">&quot;eps&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/gsea/FGSEA.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/gsea/FGSEA.svelte&quot;</span>
+    <span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">Enrichr</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.gsea.Enrichr"></span><a class="mkapi-docs-link" title="biopipen.namespaces.gsea.Enrichr" href="../../biopipen.namespaces.gsea/#biopipen.namespaces.gsea.Enrichr">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Gene set enrichment analysis using Enrichr</span>
+
+<span class="sd">    Need `devtools::install_github(&quot;wjawaid/enrichR&quot;)`</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        infile: The gene list file.</span>
+<span class="sd">            You can specify whether this file has header and the index (0-based)</span>
+<span class="sd">            of the columns where the genes are present</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        inopts: Options for `read.table()` to read `in.infile`</span>
+<span class="sd">        genecol: Which column has the genes (0-based index or column name)</span>
+<span class="sd">        dbs: The databases to enrich against.</span>
+<span class="sd">            See https://maayanlab.cloud/Enrichr/#libraries for all available</span>
+<span class="sd">            databases/libaries</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;infile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.infile | stem}}.enrichr&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;inopts&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;genecol&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="s2">&quot;genename&quot;</span><span class="p">:</span> <span class="s2">&quot;symbol&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;dbs&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;KEGG_2021_Human&quot;</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/gsea/Enrichr.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/gsea/Enrichr.svelte&quot;</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.29db7785.min.js"></script>
+      
+        <script src="../../../js/mkapi.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1131 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.2.3">
+    
+    
+      
+        <title>scrna_metabolic - biopipen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    
+      <link rel="stylesheet" href="../../css/mkapi-common.css">
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#scrna_metabolic" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="biopipen" class="md-header__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            biopipen
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              scrna_metabolic
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="biopipen" class="md-nav__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    biopipen
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Pipelines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pipelines" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pipelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          scrna_metabolic
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        scrna_metabolic
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scrna_metabolic" class="md-nav__link">
+    scrna_metabolic
+  </a>
+  
+    <nav class="md-nav" aria-label="scrna_metabolic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-pipeline" class="md-nav__link">
+    Run the pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    Inputs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-step-by-step-example" class="md-nav__link">
+    A step-by-step example
+  </a>
+  
+    <nav class="md-nav" aria-label="A step-by-step example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-seurat-object" class="md-nav__link">
+    Prepare the seurat object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-pathway-file" class="md-nav__link">
+    Prepare the pathway file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-configuration-file" class="md-nav__link">
+    Prepare the configuration file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-pipeline_1" class="md-nav__link">
+    Run the pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-out-the-resultsreports" class="md-nav__link">
+    Check out the results/reports
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        biopipen.core
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.core" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.core
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.core/" class="md-nav__link">
+        biopipen.core
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.core.defaults/" class="md-nav__link">
+        biopipen.core.defaults
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.core.config/" class="md-nav__link">
+        biopipen.core.config
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.core.proc/" class="md-nav__link">
+        biopipen.core.proc
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        biopipen.namespaces
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.namespaces" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.namespaces
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces/" class="md-nav__link">
+        biopipen.namespaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.tcr/" class="md-nav__link">
+        biopipen.namespaces.tcr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.gsea/" class="md-nav__link">
+        biopipen.namespaces.gsea
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.rnaseq/" class="md-nav__link">
+        biopipen.namespaces.rnaseq
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.scrna_metabolic/" class="md-nav__link">
+        biopipen.namespaces.scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.vcf/" class="md-nav__link">
+        biopipen.namespaces.vcf
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.web/" class="md-nav__link">
+        biopipen.namespaces.web
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.misc/" class="md-nav__link">
+        biopipen.namespaces.misc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.bed/" class="md-nav__link">
+        biopipen.namespaces.bed
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.gene/" class="md-nav__link">
+        biopipen.namespaces.gene
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.plot/" class="md-nav__link">
+        biopipen.namespaces.plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.bcftools/" class="md-nav__link">
+        biopipen.namespaces.bcftools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.bam/" class="md-nav__link">
+        biopipen.namespaces.bam
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.scrna/" class="md-nav__link">
+        biopipen.namespaces.scrna
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/biopipen.namespaces.csv/" class="md-nav__link">
+        biopipen.namespaces.csv
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        Change log
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scrna_metabolic" class="md-nav__link">
+    scrna_metabolic
+  </a>
+  
+    <nav class="md-nav" aria-label="scrna_metabolic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-pipeline" class="md-nav__link">
+    Run the pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    Inputs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-step-by-step-example" class="md-nav__link">
+    A step-by-step example
+  </a>
+  
+    <nav class="md-nav" aria-label="A step-by-step example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-seurat-object" class="md-nav__link">
+    Prepare the seurat object
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-pathway-file" class="md-nav__link">
+    Prepare the pathway file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prepare-the-configuration-file" class="md-nav__link">
+    Prepare the configuration file
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-pipeline_1" class="md-nav__link">
+    Run the pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#check-out-the-resultsreports" class="md-nav__link">
+    Check out the results/reports
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/pwwang/biopipen/edit/master/docs/pipelines/scrna_metabolic.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>scrna_metabolic</h1>
+                
+                <h2 id="scrna_metabolic">scrna_metabolic</h2>
+<p>Metabolic landscape analysis for single-cell RNA-seq data</p>
+<p>An abstract from https://github.com/LocasaleLab/Single-Cell-Metabolic-Landscape</p>
+<h3 id="reference">Reference</h3>
+<blockquote>
+<p>Xiao, Zhengtao, Ziwei Dai, and Jason W. Locasale. "Metabolic landscape of the tumor microenvironment at single cell resolution." Nature communications 10.1 (2019): 1-12.</p>
+</blockquote>
+<h3 id="run-the-pipeline">Run the pipeline</h3>
+<div class="highlight"><pre><span></span><code>pipen run scrna_metabolic metabolic_landscape <span class="o">[</span>options<span class="o">]</span>
+</code></pre></div>
+<h3 id="inputs">Inputs</h3>
+<ul>
+<li>
+<p><code>metafile</code>: A metafile indicating the metadata</p>
+<p>Two columns are required: <code>Sample</code> and <code>RNADir</code>
+<code>Sample</code> should be the first column with unique identifiers
+for the samples and <code>RNADir</code> indicates where the expression
+matrice are.</p>
+<p>Currently only 10X data is supported</p>
+<p>You can also pass a <code>Seurat</code> with metadata attached.</p>
+</li>
+<li>
+<p><code>subsetfile</code>: A file with information to subset the cells.</p>
+<p>Each subset of cells will be treated separately.
+See <code>subsetting</code> of <code>in.config</code></p>
+</li>
+<li>
+<p><code>groupfile</code>: The group file to group the cells.</p>
+<p>Rows are groups, and columns are cell IDs
+(without sample prefices)
+from samples or a single column <code>ALL</code> but with all cell IDs with
+sample prefices. Or it can be served as a config file for
+subsetting the cells.
+See <code>grouping</code> of <code>in.config</code></p>
+</li>
+<li>
+<p><code>gmtfile</code>: The GMT file with the metabolic pathways</p>
+</li>
+<li>
+<p><code>config</code>: String of configurations in TOML for the pipeline</p>
+<ul>
+<li><code>grouping_name</code>: The name of the groupings. Default: <code>Group</code></li>
+<li><code>grouping</code>: How the cells should be grouped.
+    If <code>"Input"</code>, use <code>in.groupfile</code> directly to group the cells
+    else if <code>Idents</code>, use <code>Idents(srtobj)</code> as groups. Otherwise
+    (<code>Config</code>), it is TOML config with
+    <code>name =&gt; condition</code> pairs. The <code>condition</code> will be passed to
+    <code>subset(srtobj, ...)</code> to get the subset of cells</li>
+<li><code>subsetting</code>: Similar as <code>grouping</code>, indicating how to use
+    <code>in.subsetfile</code> to subset the cells.</li>
+<li><code>design</code>: For intra-subset comparisons. For example:
+    <code>case1 = [&lt;subset1&gt;, &lt;subset2&gt;]</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="a-step-by-step-example">A step-by-step example</h3>
+<h4 id="prepare-the-seurat-object">Prepare the seurat object</h4>
+<p>Using the data from:</p>
+<blockquote>
+<p>Yost KE, Satpathy AT, Wells DK, Qi Y et al. Clonal replacement of tumor-specific T cells following PD-1 blockade. Nat Med 2019 Aug;25(8):1251-1259. PMID: 31359002</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="nf">library</span><span class="p">(</span><span class="n">Seurat</span><span class="p">)</span>
+
+<span class="c1"># Download data (tcell rds and metadata) from</span>
+<span class="c1"># https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE123813</span>
+
+<span class="n">count_file</span> <span class="o">&lt;-</span> <span class="s">&quot;test_data/scrna_metabolic/GSE123813_bcc_scRNA_counts.txt.gz&quot;</span>
+<span class="n">meta_file</span> <span class="o">&lt;-</span> <span class="s">&quot;test_data/scrna_metabolic/GSE123813_bcc_all_metadata.txt.gz&quot;</span>
+
+<span class="n">counts</span> <span class="o">&lt;-</span> <span class="nf">read.table</span><span class="p">(</span><span class="n">count_file</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">row.names</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&quot;\t&quot;</span><span class="p">,</span> <span class="n">check.names</span> <span class="o">=</span> <span class="bp">F</span><span class="p">)</span>
+<span class="n">metadata</span> <span class="o">&lt;-</span> <span class="nf">read.table</span><span class="p">(</span><span class="n">meta_file</span><span class="p">,</span> <span class="n">header</span> <span class="o">=</span> <span class="kc">TRUE</span><span class="p">,</span> <span class="n">row.names</span> <span class="o">=</span> <span class="m">1</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s">&quot;\t&quot;</span><span class="p">,</span> <span class="n">check.names</span> <span class="o">=</span> <span class="bp">F</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Subset 1000 cells for jusb demo purpose</span>
+<span class="n">counts</span> <span class="o">=</span> <span class="n">counts</span><span class="p">[,</span> <span class="nf">sample</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="nf">ncol</span><span class="p">(</span><span class="n">counts</span><span class="p">),</span> <span class="m">1000</span><span class="p">)]</span>
+<span class="n">metadata</span> <span class="o">=</span> <span class="n">metadata</span><span class="p">[</span><span class="nf">colnames</span><span class="p">(</span><span class="n">counts</span><span class="p">),]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Create seurat object</span>
+<span class="n">seurat_obj</span> <span class="o">=</span> <span class="nf">CreateSeuratObject</span><span class="p">(</span><span class="n">counts</span><span class="o">=</span><span class="n">counts</span><span class="p">)</span>
+<span class="n">seurat_obj</span><span class="o">@</span><span class="n">meta.data</span> <span class="o">=</span> <span class="nf">cbind</span><span class="p">(</span>
+    <span class="n">seurat_obj</span><span class="o">@</span><span class="n">meta.data</span><span class="p">,</span>
+    <span class="n">metadata</span><span class="p">[</span><span class="nf">rownames</span><span class="p">(</span><span class="n">seurat_obj</span><span class="o">@</span><span class="n">meta.data</span><span class="p">),]</span>
+<span class="p">)</span>
+<span class="n">seurat_obj</span> <span class="o">=</span> <span class="nf">NormalizeData</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">)</span>
+<span class="n">all.genes</span> <span class="o">&lt;-</span> <span class="nf">rownames</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">)</span>
+<span class="n">seurat_obj</span> <span class="o">&lt;-</span> <span class="nf">ScaleData</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">,</span> <span class="n">features</span> <span class="o">=</span> <span class="n">all.genes</span><span class="p">)</span>
+<span class="n">seurat_obj</span> <span class="o">&lt;-</span> <span class="nf">FindVariableFeatures</span><span class="p">(</span><span class="n">object</span> <span class="o">=</span> <span class="n">seurat_obj</span><span class="p">)</span>
+<span class="n">seurat_obj</span> <span class="o">&lt;-</span> <span class="nf">RunPCA</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">,</span> <span class="n">features</span> <span class="o">=</span> <span class="nf">VariableFeatures</span><span class="p">(</span><span class="n">object</span> <span class="o">=</span> <span class="n">seurat_obj</span><span class="p">))</span>
+
+<span class="c1"># Output exceeds the size limit. Open the full output data in a text editor</span>
+
+<span class="c1"># Warning message:</span>
+<span class="c1"># &quot;Feature names cannot have underscores (&#39;_&#39;), replacing with dashes (&#39;-&#39;)&quot;</span>
+<span class="c1"># Centering and scaling data matrix</span>
+
+<span class="c1"># PC_ 1</span>
+<span class="c1"># Positive:  CALD1, EMP2, SPARC, CAV1, EMP1, ACTN1, KRT17, BGN, DSP, RAB13</span>
+<span class="c1"># 	   RND3, S100A16, KRT14, S100A14, S100A2, CD9, FHL2, IER3, GJB2, TRIM29</span>
+<span class="c1"># 	   TSC22D1, KRT15, SFN, FSTL1, DDR1, IGFBP7, JUP, PTRF, KRT5, FOSL1</span>
+<span class="c1"># Negative:  CD74, CRIP1, RARRES3, RGS1, LAT, CD69, NKG7, HLA-DPA1, TNFRSF4, CD27</span>
+<span class="c1"># 	   GZMA, HLA-DRB1, CXCR6, CTSW, GPR183, LDLRAD4, ICOS, HIST1H4C, GZMK, AC092580.4</span>
+<span class="c1"># 	   SLC9A3R1, CCR7, S100A4, HLA-DPB1, HMGB2, GBP5, SELL, CXCR3, LAG3, HLA-DRB5</span>
+<span class="c1"># PC_ 2</span>
+<span class="c1"># Positive:  DSP, DSC3, SFN, SERPINB5, KRT17, S100A14, KRT15, KRT16, IRF6, TRIM29</span>
+<span class="c1"># 	   KRT14, LGALS7B, JUP, PERP, TACSTD2, GJB2, KRT5, KRT6B, DDR1, S100A2</span>
+<span class="c1"># 	   PKP1, CDH3, KRT6A, FXYD3, GJB3, MPZL2, CXADR, DSC2, DSG3, GRHL3</span>
+<span class="c1"># Negative:  COL1A2, COL3A1, LUM, COL6A1, MXRA8, FN1, CTSK, COL1A1, COL6A3, DCN</span>
+<span class="c1"># 	   MMP2, COL6A2, PRRX1, FKBP10, TNFAIP6, FAP, PCOLCE, PDGFRB, NNMT, AEBP1</span>
+<span class="c1"># 	   C1S, CCDC80, SFRP2, RCN3, PDPN, SERPINF1, COL5A2, CTHRC1, COL5A1, COL12A1</span>
+<span class="c1"># PC_ 3</span>
+<span class="c1"># Positive:  LYZ, TYROBP, SPI1, FCER1G, KYNU, C15orf48, BCL2A1, HLA-DRA, CD68, AIF1</span>
+<span class="c1"># 	   CST3, CTSZ, SERPINA1, CSF2RA, HLA-DRB5, SLC7A11, LST1, MS4A7, ALDH2, FAM49A</span>
+<span class="c1"># 	   IFI30, HLA-DRB1, GPR157, PLEK, HLA-DPB1, IL1B, CD86, CCDC88A, HLA-DPA1, RNF144B</span>
+<span class="c1"># Negative:  MT2A, MT1X, BGN, MT1E, COL6A2, COL1A2, COL6A1, COL5A2, MXRA8, DCN</span>
+<span class="c1"># 	   COL12A1, COL3A1, COL1A1, LUM, MFAP2, PCOLCE, MT1F, MMP2, COL5A1, COL6A3</span>
+<span class="c1"># 	   PRRX1, C1S, AEBP1, CTSK, FAP, LAT, PDGFRB, RARRES3, THY1, EFEMP2</span>
+<span class="c1"># 	   GJB3, LYPD3, GRHL3, PVRL4, KRT16, TACSTD2, GJB5, SERPINB13, MPZL2, KRT23</span>
+<span class="c1"># Negative:  UBE2C, GTSE1, BIRC5, RRM2, CCNA2, TYMS, TOP2A, TK1, DLGAP5, MKI67</span>
+<span class="c1"># 	   PKMYT1, CENPA, KIFC1, CDCA5, UHRF1, ASF1B, AURKB, FAM111B, TROAP, CKAP2L</span>
+<span class="c1"># 	   HJURP, ESCO2, FOXM1, CDK1, ZWINT, E2F2, CLSPN, HIST1H1B, CDT1, MCM10</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># By default, the pipeline assumes the cells are not clustered</span>
+<span class="c1"># and it will do the clustering using the scrna.SeuratClustering process</span>
+<span class="c1">#</span>
+<span class="c1"># If you want to do the clustering yourself, remember to add following</span>
+<span class="c1">#</span>
+<span class="c1"># [pipeline.scrna_metabolic]</span>
+<span class="c1"># clustered = false</span>
+<span class="c1">#</span>
+<span class="c1"># to your `.biopipen.toml` either in your home directory or current directory.</span>
+
+<span class="n">seurat_obj</span> <span class="o">&lt;-</span> <span class="nf">FindNeighbors</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">,</span> <span class="n">dims</span> <span class="o">=</span> <span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span>
+<span class="n">seurat_obj</span> <span class="o">&lt;-</span> <span class="nf">FindClusters</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">,</span> <span class="n">resolution</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span>
+<span class="nf">head</span><span class="p">(</span><span class="nf">Idents</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">))</span>
+<span class="c1"># Computing nearest neighbor graph</span>
+
+<span class="c1"># Computing SNN</span>
+
+<span class="c1"># Modularity Optimizer version 1.3.0 by Ludo Waltman and Nees Jan van Eck</span>
+
+<span class="c1"># Number of nodes: 1000</span>
+<span class="c1"># Number of edges: 30631</span>
+
+<span class="c1"># Running Louvain algorithm...</span>
+<span class="c1"># Maximum modularity in 10 random starts: 0.8795</span>
+<span class="c1"># Number of communities: 9</span>
+<span class="c1"># Elapsed time: 0 seconds</span>
+
+<span class="c1"># bcc.su009.post.tcell_CCATTCGCAATCTACG 0</span>
+<span class="c1"># bcc.su004.pre.tcell_ACAGCTACACTTCTGC  0</span>
+<span class="c1"># bcc.su006.pre.tcell_CGTGTAAAGTGACTCT  1</span>
+<span class="c1"># bcc.su001.post.tcell_CCTTTCTGTACCGTTA 2</span>
+<span class="c1"># bcc.su007.pre.tcell_ATTTCTGAGAAGGACA  1</span>
+<span class="c1"># bcc.su009.pre.tcell_AGACGTTTCCTGCAGG8 8</span>
+<span class="c1"># Levels:</span>
+<span class="c1"># &#39;0&#39;&#39;1&#39;&#39;2&#39;&#39;3&#39;&#39;4&#39;&#39;5&#39;&#39;6&#39;&#39;7&#39;&#39;8&#39;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># Check the meta.data</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">seurat_obj</span><span class="o">@</span><span class="n">meta.data</span><span class="p">)</span>
+<span class="c1"># 	orig.ident	nCount_RNA	nFeature_RNA	patient	treatment	sort	cluster	UMAP1	UMAP2	RNA_snn_res.0.5	seurat_clusters</span>
+<span class="c1"># &lt;fct&gt;	&lt;dbl&gt;	&lt;int&gt;	&lt;chr&gt;	&lt;chr&gt;	&lt;chr&gt;	&lt;chr&gt;	&lt;dbl&gt;	&lt;dbl&gt;	&lt;fct&gt;	&lt;fct&gt;</span>
+<span class="c1"># bcc.su009.post.tcell_CCATTCGCAATCTACG	bcc.su009.post.tcell	4242	1726	su009	post	CD45+ CD3+	CD8_mem_T_cells	-9.1816435	0.7484789	0	0</span>
+<span class="c1"># bcc.su004.pre.tcell_ACAGCTACACTTCTGC	bcc.su004.pre.tcell	3159	1466	su004	pre	CD45+ CD3+	CD8_ex_T_cells	4.1067562	3.3754938	0	0</span>
+<span class="c1"># bcc.su006.pre.tcell_CGTGTAAAGTGACTCT	bcc.su006.pre.tcell	3279	1401	su006	pre	CD45+ CD3+	Tregs	0.4816457	11.9388428	1	1</span>
+<span class="c1"># bcc.su001.post.tcell_CCTTTCTGTACCGTTA	bcc.su001.post.tcell	5057	2218	su001	post	CD45+ CD3+	CD8_ex_T_cells	2.3045983	7.4856248	2	2</span>
+<span class="c1"># bcc.su007.pre.tcell_ATTTCTGAGAAGGACA	bcc.su007.pre.tcell	3701	1413	su007	pre	CD45+ CD3+	CD8_mem_T_cells	-1.9617293	5.5546365	1	1</span>
+<span class="c1"># bcc.su009.pre.tcell_AGACGTTTCCTGCAGG	bcc.su009.pre.tcell	3891	1593	su009	pre	CD45+ CD3+	Tcell_prolif	5.2243228	-1.0460106	8	8</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># save seurat object</span>
+<span class="nf">saveRDS</span><span class="p">(</span><span class="n">seurat_obj</span><span class="p">,</span> <span class="s">&quot;test_data/scrna_metabolic/seurat_obj.rds&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="prepare-the-pathway-file">Prepare the pathway file</h4>
+<p>A set of collected metabolic pathways can be found here:</p>
+<p>https://github.com/LocasaleLab/Single-Cell-Metabolic-Landscape/blob/master/Data/KEGG_metabolism.gmt</p>
+<p>Download and save it to <code>test_data/scrna_metabolic/KEGG_metabolism.gmt</code></p>
+<h4 id="prepare-the-configuration-file">Prepare the configuration file</h4>
+<p>Save at <code>test_data/scrna_metabolic/config.toml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Set input data</span><span class="w"></span>
+<span class="k">[MetabolicInputs.in]</span><span class="w"></span>
+<span class="n">metafile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;test_data/scrna_metabolic/seurat_obj.rds&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="n">gmtfile</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;test_data/scrna_metabolic/KEGG_metabolism.gmt&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="n">config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="s">&quot;&quot;&quot;</span>
+<span class="s">name = &quot;</span><span class="n">Patient</span><span class="p">:</span><span class="w"> </span><span class="n">su001</span><span class="s">&quot;</span>
+<span class="s">grouping = &quot;</span><span class="n">Idents</span><span class="s">&quot;</span>
+<span class="s">grouping_name = &quot;</span><span class="n">Cluster</span><span class="s">&quot;</span>
+<span class="s">[subsetting]</span>
+<span class="s">post = &quot;</span><span class="n">treatment</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&#39;post&#39;</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="n">patient</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&#39;su001&#39;&quot;</span>
+<span class="s">pre = &quot;</span><span class="n">treatment</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&#39;pre&#39;</span><span class="w"> </span><span class="err">&amp;</span><span class="w"> </span><span class="n">patient</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&#39;su001&#39;&quot;</span>
+<span class="s">[design]</span>
+<span class="s"># we also want to do some intra-subset comparisons</span>
+<span class="s">post_vs_pre = [&quot;</span><span class="n">post</span><span class="s">&quot;, &quot;</span><span class="n">pre</span><span class="s">&quot;]</span>
+<span class="s">&quot;&quot;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+<span class="c1"># you can have multiple cases</span><span class="w"></span>
+<span class="c1"># config = [&lt;config1&gt;, &lt;config2&gt;]</span><span class="w"></span>
+</code></pre></div>
+<h4 id="run-the-pipeline_1">Run the pipeline</h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Make sure `pipeline.scrna_metabolic.clustered` is `false` in</span>
+<span class="c1"># `./.biopipen.toml` or `~/.biopipen.toml`</span>
+pipen run scrna_metabolic metabolic_landscape --config test_data/scrna_metabolic/config.toml
+</code></pre></div>
+<h4 id="check-out-the-resultsreports">Check out the results/reports</h4>
+<p>The results can be found at <code>./metabolic-landscape_results/</code>, and reports can be found at <code>./metabolic-landscape_results/REPORTS</code>. To check out the reports, open <code>./metabolic-landscape_results/REPORTS/index.html</code> in your browser.</p>
+<p>There are 4 parts of the results:</p>
+<ul>
+<li>
+<p><code>MetabolicPathwayActivity</code>:</p>
+<p>The pathway activities for groups (defined by <code>grouping</code> in the configration) for each subset (defined by <code>subsetting</code>)</p>
+</li>
+<li>
+<p><code>MetabolicPathwayHeterogeneity</code>:</p>
+<p>Pathway heterogeneity for groups for each subset</p>
+</li>
+<li>
+<p><code>MetabolicFeatures</code>:</p>
+<p>The pathway enrichment analysis in detail for each group against the rest of the groups in each subset (inter-subset).</p>
+</li>
+<li>
+<p><code>MetabolicFeaturesIntraSubsets</code>:</p>
+<p>The pathway enrichment analysis in detail by the designs (defined by <code>design</code> in the configration) for each group.
+The designs are basically comparisons between subsets, and that'ss why this is called <code>intra-subsets</code></p>
+</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../../api/biopipen.core/" class="md-footer__link md-footer__link--next" aria-label="Next: biopipen.core" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              biopipen.core
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.29db7785.min.js"></script>
+      
+        <script src="../../js/mkapi.js"></script>
+      
+    
+  </body>
+</html>

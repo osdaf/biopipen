@@ -1,0 +1,1127 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.2.3">
+    
+    
+      
+        <title>biopipen.namespaces.tcr - biopipen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    
+      <link rel="stylesheet" href="../../../css/mkapi-common.css">
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#biopipennamespacestcr" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="biopipen" class="md-header__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            biopipen
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              biopipen.namespaces.tcr
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="biopipen" class="md-nav__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    biopipen
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Pipelines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pipelines" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pipelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pipelines/scrna_metabolic/" class="md-nav__link">
+        scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        biopipen.core
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.core" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.core
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core/" class="md-nav__link">
+        biopipen.core
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.defaults/" class="md-nav__link">
+        biopipen.core.defaults
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.config/" class="md-nav__link">
+        biopipen.core.config
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.core.proc/" class="md-nav__link">
+        biopipen.core.proc
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        biopipen.namespaces
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.namespaces" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.namespaces
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces/" class="md-nav__link">
+        biopipen.namespaces
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.tcr/" class="md-nav__link">
+        biopipen.namespaces.tcr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.gsea/" class="md-nav__link">
+        biopipen.namespaces.gsea
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.rnaseq/" class="md-nav__link">
+        biopipen.namespaces.rnaseq
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.scrna_metabolic/" class="md-nav__link">
+        biopipen.namespaces.scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.vcf/" class="md-nav__link">
+        biopipen.namespaces.vcf
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.web/" class="md-nav__link">
+        biopipen.namespaces.web
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.misc/" class="md-nav__link">
+        biopipen.namespaces.misc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bed/" class="md-nav__link">
+        biopipen.namespaces.bed
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.gene/" class="md-nav__link">
+        biopipen.namespaces.gene
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.plot/" class="md-nav__link">
+        biopipen.namespaces.plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bcftools/" class="md-nav__link">
+        biopipen.namespaces.bcftools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.bam/" class="md-nav__link">
+        biopipen.namespaces.bam
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.scrna/" class="md-nav__link">
+        biopipen.namespaces.scrna
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../biopipen.namespaces.csv/" class="md-nav__link">
+        biopipen.namespaces.csv
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../CHANGELOG/" class="md-nav__link">
+        Change log
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#biopipennamespacestcr" class="md-nav__link">
+    biopipen.namespaces.tcr
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/pwwang/biopipen/edit/master/docs/api/source/biopipen.namespaces.tcr.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <div class="mkapi-node">
+<h1 id="" class="mkapi-object mkapi-object-code plain">
+<span class="mkapi-object-kind mkapi-object-kind-code">SOURCE CODE</span>
+<span class="mkapi-object-prefix">biopipen.namespaces.</span><span class="mkapi-object-name">tcr</span>
+<span id="biopipen.namespaces.tcr"></span><a class="mkapi-docs-link" href="../../biopipen.namespaces.tcr">DOCS</a>
+</h1>
+
+<div class="mkapi-code">
+<div class="codehilite"><pre><span></span><code><span class="sd">&quot;&quot;&quot;Tools to analyze single-cell TCR sequencing data&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">..core.defaults</span> <span class="kn">import</span> <span class="n">SCRIPT_DIR</span>
+<span class="kn">from</span> <span class="nn">..core.proc</span> <span class="kn">import</span> <span class="n">Proc</span>
+<span class="kn">from</span> <span class="nn">..core.config</span> <span class="kn">import</span> <span class="n">config</span>
+
+
+<span class="k">class</span> <span class="nc">ImmunarchLoading</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.ImmunarchLoading"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.ImmunarchLoading" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchLoading">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Immuarch - Loading data</span>
+
+<span class="sd">    Build based on immunarch 0.6.7</span>
+<span class="sd">    See https://immunarch.com/articles/v2_data.html for supported data formats</span>
+<span class="sd">    Currently only 10x data format is supported</span>
+
+<span class="sd">    Library `dplyr` is also required to manipulate the meta data.</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        metafile: The meta data of the samples</span>
+<span class="sd">            A tab-delimited file</span>
+<span class="sd">            Two columns are required:</span>
+<span class="sd">            - `Sample` to specify the sample names.</span>
+<span class="sd">            - `TCRDir` to assign the path of the data to the samples,</span>
+<span class="sd">            and this column will be excluded as metadata.</span>
+<span class="sd">            Immunarch is able to fetch the sample names from the names of</span>
+<span class="sd">            the target files. However, 10x data yields result like</span>
+<span class="sd">            `filtered_contig_annotations.csv`, which doesn&#39;t have any name</span>
+<span class="sd">            information.</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        rdsfile: The RDS file with the data and metadata</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        tmpdir: The temporary directory to link all data files.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;metafile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;rdsfile:file:{{in.metafile | stem}}.immunarch.RDS&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;tmpdir&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">tmpdir</span><span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/ImmunarchLoading.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">ImmunarchFilter</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.ImmunarchFilter"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.ImmunarchFilter" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchFilter">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Immunarch - Filter data</span>
+
+<span class="sd">    See https://immunarch.com/articles/web_only/repFilter_v3.html</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        immdata: The data loaded by `immunarch::repLoad()`</span>
+<span class="sd">        filterfile: A config file in TOML.</span>
+<span class="sd">            A dict of configurations with keys as the names of the group and</span>
+<span class="sd">            values dicts with following keys.</span>
+<span class="sd">            See `envs.filters`</span>
+
+
+<span class="sd">    Output:</span>
+<span class="sd">        outfile: The filtered `immdata`</span>
+<span class="sd">        groupfile: Also a group file with first column the groups and other</span>
+<span class="sd">            columns the cell barcodes in the samples</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        merge: Merge the cells from the samples, instead of list cells</span>
+<span class="sd">            for different samples. The cell ids will be preficed with the sample</span>
+<span class="sd">            name, connected with `_`. The column name will be `ALL` instead.</span>
+<span class="sd">        clonotype: Use clonotype (CDR3.aa) as the group. The name from</span>
+<span class="sd">            `envs.filters` will be ignored</span>
+<span class="sd">        filters: The filters to filter the data</span>
+<span class="sd">            You can have multiple cases (groups), the names will be the keys of</span>
+<span class="sd">            this dict, values are also dicts with keys the methods supported by</span>
+<span class="sd">            `immunarch::repFilter()`.</span>
+<span class="sd">            There is one more method `by.count` supported to filter the</span>
+<span class="sd">            count matrix. For `by.meta`, `by.repertoire`, `by.rep`,</span>
+<span class="sd">            `by.clonotype` or `by.col` the values will be passed to</span>
+<span class="sd">            `.query` of `repFilter()`.</span>
+<span class="sd">            You can also use the helper functions provided by `immunarch`,</span>
+<span class="sd">            including `morethan`, `lessthan`, `include`, `exclude` and</span>
+<span class="sd">            `interval`. If these functions are not used, `include(value)` will</span>
+<span class="sd">            be used by default.</span>
+<span class="sd">            For `by.count`, the value of `filter` will be passed to</span>
+<span class="sd">            `dplyr::filter()` to filter the count matrix.</span>
+<span class="sd">            You can also specify `ORDER` to define the filtration order, which</span>
+<span class="sd">            defaults to 0, higher `ORDER` gets later executed.</span>
+<span class="sd">            For example:</span>
+<span class="sd">            &gt;&gt;&gt; {{</span>
+<span class="sd">            &gt;&gt;&gt;   &quot;Top20BM_Post&quot;: {{</span>
+<span class="sd">            &gt;&gt;&gt;     &quot;by.meta&quot;: {{&quot;Source&quot;: &quot;BM&quot;, &quot;Status&quot;: &quot;Post&quot;}},</span>
+<span class="sd">            &gt;&gt;&gt;     &quot;by.count&quot;: {{</span>
+<span class="sd">            &gt;&gt;&gt;         &quot;ORDER&quot;: 1, &quot;filter&quot;: &quot;TOTAL %in% TOTAL[1:20]&quot;</span>
+<span class="sd">            &gt;&gt;&gt;     }}</span>
+<span class="sd">            &gt;&gt;&gt;   }}</span>
+<span class="sd">            &gt;&gt;&gt; }}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;immdata:file, filterfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;outfile:file:{{in.immdata | stem}}.RDS&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;groupfile:file:{{in.immdata | stem}}.groups.txt&quot;</span>
+    <span class="p">]</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;merge&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;clonotype&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;filters&quot;</span><span class="p">:</span> <span class="p">{},</span>
+    <span class="p">}</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/ImmunarchFilter.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">ImmunarchBasic</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.ImmunarchBasic"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.ImmunarchBasic" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchBasic">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Immunarch - Basic statistics and clonality</span>
+
+<span class="sd">    See https://immunarch.com/articles/web_only/v3_basic_analysis.html</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        immdata: The data loaded by `immunarch::repLoad()`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        volume_by: Groupings to show clonotype volume (sizes)</span>
+<span class="sd">            Multiple groups supported, for example:</span>
+<span class="sd">            `volume_by = {{0: &quot;Status&quot;, 1: [&quot;Status&quot;, &quot;Sex&quot;]}}`</span>
+<span class="sd">            Or label the groups:</span>
+<span class="sd">            `volume_by = {{&quot;Status&quot;: &quot;Status&quot;, &quot;Status_Sex&quot;: [&quot;Status&quot;, &quot;Sex&quot;]}}`</span>
+<span class="sd">            If a list or a single variable is given, it will be changed</span>
+<span class="sd">            into `{{&quot;Status&quot;: &quot;Status&quot;}}`</span>
+<span class="sd">        len_by: Groupings to show CDR3 length of both aa and nt</span>
+<span class="sd">        count_by: Groupings to show clonotype counts per sample</span>
+<span class="sd">        top_clone_marks: `.head` arguments of `repClonoality()`</span>
+<span class="sd">        top_clone_by: Groupings when visualize top clones</span>
+<span class="sd">        rare_clone_marks: `.bound` arguments of `repClonoality()`</span>
+<span class="sd">        rare_clone_by: Groupings when visualize rare clones</span>
+<span class="sd">        hom_clone_marks: `.clone.types` arguments of `repClonoality()`</span>
+<span class="sd">        hom_clone_by: Groupings when visualize homeo clones</span>
+<span class="sd">        overlap_methods: The methods used for `repOverlap()`, each will</span>
+<span class="sd">            generate a heatmap.</span>
+<span class="sd">        overlap_redim: Plot the samples with these dimension reduction methods</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;immdata:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.immdata | stem}}.basic&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1"># basic statistics</span>
+        <span class="s2">&quot;volume_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;len_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;count_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="c1"># clonality</span>
+        <span class="s2">&quot;top_clone_marks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="mi">3000</span><span class="p">,</span> <span class="mi">10000</span><span class="p">],</span>
+        <span class="s2">&quot;top_clone_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;rare_clone_marks&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>
+        <span class="s2">&quot;rare_clone_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;hom_clone_marks&quot;</span><span class="p">:</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">Small</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">,</span>
+            <span class="n">Medium</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+            <span class="n">Large</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span>
+            <span class="n">Hyperexpanded</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="s2">&quot;hom_clone_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="c1"># overlapping</span>
+        <span class="s2">&quot;overlap_methods&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;public&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;overlap_redim&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;tsne&quot;</span><span class="p">,</span> <span class="s2">&quot;mds&quot;</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/ImmunarchBasic.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/tcr/ImmunarchBasic.svelte&quot;</span><span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">ImmunarchAdvanced</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.ImmunarchAdvanced"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.ImmunarchAdvanced" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchAdvanced">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Immunarch - Advanced analysis</span>
+
+<span class="sd">    Including gene usage, diversity estimation, tracking clonotype changes and</span>
+<span class="sd">    kmer/motif analysis</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        immdata: The data loaded by `immunarch::repLoad()`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        gu_by: Groupings to show gene usages</span>
+<span class="sd">            Multiple groups supported, for example:</span>
+<span class="sd">            `volume_by = {{0: &quot;Status&quot;, 1: [&quot;Status&quot;, &quot;Sex&quot;]}}`</span>
+<span class="sd">            Or label the groups:</span>
+<span class="sd">            `volume_by = {{&quot;Status&quot;: &quot;Status&quot;, &quot;Status_Sex&quot;: [&quot;Status&quot;,&quot;Sex&quot;]}}`</span>
+<span class="sd">            If a list or a single variable is given, it will be changed</span>
+<span class="sd">            into `{{&quot;Status&quot;: &quot;Status&quot;}}`</span>
+<span class="sd">        gu_top: How many top (ranked by total usage across samples) genes to</span>
+<span class="sd">            show in the plots</span>
+<span class="sd">        gua_methods: controls how the data is going to be preprocessed and</span>
+<span class="sd">            analysed. One of js, cor, cosine, pca, mds, and tsne</span>
+<span class="sd">        spect: `.quant` and `.col` for `spectratype()` for each sample</span>
+<span class="sd">        div_methods: Methods to calculate diversities</span>
+<span class="sd">        div_by: Groupings to show sample diversities</span>
+<span class="sd">        raref_by: Groupings to show rarefactions</span>
+<span class="sd">        tracking_target: and</span>
+<span class="sd">        tracking_samples: The target and samples to tracking</span>
+<span class="sd">            You can do multiple trackings. To do that, you need to specify</span>
+<span class="sd">            a key for each tracking. It will use the target and samples under</span>
+<span class="sd">            the same key. If samples from `tracking_samples` cannot be found,</span>
+<span class="sd">            all samples will be used</span>
+<span class="sd">            Other than the target supported by immunarch, you can also specify</span>
+<span class="sd">            top shared clones. For example:</span>
+<span class="sd">            `tracking_target = {{ &quot;top_4&quot;: {{&quot;TOP&quot;: 4}} }}`</span>
+<span class="sd">        kmers: Arguments for kmer analysis.</span>
+<span class="sd">            Keys are the K of mers. Values are parameters:</span>
+<span class="sd">            - `head` specifies # of the most abundant kmers to visualise.</span>
+<span class="sd">            - `position`: positions of bars: `stack`, `dodge` and `fill`</span>
+<span class="sd">            - `log`: log-transformation of y-axis</span>
+<span class="sd">            - `motif`: Method for motif analysis</span>
+<span class="sd">            There can be multiple `head`s and `motif`s.</span>
+<span class="sd">            If you do want multiple parameter sets for the same K, You can use</span>
+<span class="sd">            a float number as the K. For example: `5.1` for K `5`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;immdata:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.immdata | stem}}.advanced&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1"># gene usage</span>
+        <span class="s2">&quot;gu_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;gu_top&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+        <span class="c1"># gene usage analysis</span>
+        <span class="s2">&quot;gua_methods&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;js&quot;</span><span class="p">,</span> <span class="s2">&quot;cor&quot;</span><span class="p">],</span>
+        <span class="c1"># Spectratyping</span>
+        <span class="s2">&quot;spect&quot;</span><span class="p">:</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">quant</span><span class="o">=</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;nt&quot;</span><span class="p">),</span> <span class="nb">dict</span><span class="p">(</span><span class="n">quant</span><span class="o">=</span><span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="s2">&quot;aa+v&quot;</span><span class="p">)],</span>
+        <span class="c1"># Diversity</span>
+        <span class="s2">&quot;div_methods&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;div&quot;</span><span class="p">,</span> <span class="s2">&quot;gini.simp&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;div_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;raref_by&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="c1"># Clonotype tracking</span>
+        <span class="s2">&quot;tracking_target&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;tracking_samples&quot;</span><span class="p">:</span> <span class="p">{},</span>  <span class="c1"># can specify order</span>
+        <span class="c1"># Kmer analysis</span>
+        <span class="s2">&quot;kmers&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="mi">5</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;head&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;position&quot;</span><span class="p">:</span> <span class="s2">&quot;stack&quot;</span><span class="p">,</span> <span class="s2">&quot;log&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="s2">&quot;motif&quot;</span><span class="p">:</span> <span class="s2">&quot;self&quot;</span><span class="p">}</span>
+        <span class="p">},</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/ImmunarchAdvanced.R&quot;</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/tcr/ImmunarchAdvanced.svelte&quot;</span><span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">CloneResidency</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.CloneResidency"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.CloneResidency" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.CloneResidency">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Identification of clone residency</span>
+
+<span class="sd">    Typically, where the clones are located for the sample patient.</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        immdata: The data loaded by `immunarch::repLoad()`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        subject: The key of subject in metadata. The clone residency will</span>
+<span class="sd">            be examined for this subject/patient</span>
+<span class="sd">        group: The key of group in metadata. This usually marks the samples</span>
+<span class="sd">            that you want to compare. For example, Tumor vs Normal,</span>
+<span class="sd">            post-treatment vs baseline</span>
+<span class="sd">            It doesn&#39;t have to be 2 groups always. If there are more than 3</span>
+<span class="sd">            groups, instead of venn diagram, upset plots will be used.</span>
+<span class="sd">        order: The order of the values in `group`. Early-ordered group will</span>
+<span class="sd">            be used as x-axis in scatter plots</span>
+<span class="sd">            If there are more than 2 groups, for example, [A, B, C], the</span>
+<span class="sd">            scatter plots will be drawn for pairs: B ~ A, C ~ B.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;immdata:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.immdata | stem}}.cloneov&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;subject&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;order&quot;</span><span class="p">:</span> <span class="p">[],</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/CloneResidency.R&quot;</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/tcr/CloneResidency.svelte&quot;</span><span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">Immunarch2VDJtools</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.Immunarch2VDJtools"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.Immunarch2VDJtools" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.Immunarch2VDJtools">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Convert immuarch format into VDJtools input formats</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        immdata: The data loaded by `immunarch::repLoad()`</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outdir: The output directory containing the vdjtools input for each</span>
+<span class="sd">            sample</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;immdata:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outdir:dir:{{in.immdata | stem}}.vdjtools_input&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/Immunarch2VDJtools.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">VJUsage</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.VJUsage"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.VJUsage" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.VJUsage">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Circos-style V-J usage plot displaying the frequency of</span>
+<span class="sd">    various V-J junctions.</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        infile: The input file, in vdjtools input format</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outfile: The V-J usage plot</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        vdjtools: The path to vdjtools</span>
+<span class="sd">        vdjtools_patch: A patch for vdjtools</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;infile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outfile:file:{{ in.infile | stem | replace: &#39;.vdjtools&#39;, &#39;&#39; }}.fancyvj.wt.png&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;vdjtools&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">exe</span><span class="o">.</span><span class="n">vdjtools</span><span class="p">,</span>
+        <span class="s2">&quot;vdjtools_patch&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">SCRIPT_DIR</span> <span class="o">/</span> <span class="s2">&quot;tcr&quot;</span> <span class="o">/</span> <span class="s2">&quot;vdjtools-patch.sh&quot;</span><span class="p">),</span>
+    <span class="p">}</span>
+    <span class="n">order</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/VJUsage.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/tcr/VJUsage.svelte&quot;</span><span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">Attach2Seurat</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.Attach2Seurat"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.Attach2Seurat" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.Attach2Seurat">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Attach the clonal information to a Seurat object as metadata</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        immfile: The immunarch object in RDS</span>
+<span class="sd">        sobjfile: The Seurat object file in RDS</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        outfile: The Seurat object with the clonal information as metadata</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        prefix: The prefix to the barcodes. You can use placeholder like</span>
+<span class="sd">            `{{Sample}}_` to use the meta data from the immunarch object</span>
+<span class="sd">        metacols: Which meta columns to attach</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;immfile:file, sobjfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="s2">&quot;outfile:file:{{in.sobjfile | basename}}&quot;</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;prefix&quot;</span><span class="p">:</span> <span class="s2">&quot;</span><span class="si">{Sample}</span><span class="s2">_&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;metacols&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Clones&quot;</span><span class="p">,</span> <span class="s2">&quot;Proportion&quot;</span><span class="p">,</span> <span class="s2">&quot;CDR3.aa&quot;</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/Attach2Seurat.R&quot;</span>
+
+
+<span class="k">class</span> <span class="nc">TCRClustering</span><span class="p">(</span><span class="n">Proc</span><span class="p">):</span><span id="biopipen.namespaces.tcr.TCRClustering"></span><a class="mkapi-docs-link" title="biopipen.namespaces.tcr.TCRClustering" href="../../biopipen.namespaces.tcr/#biopipen.namespaces.tcr.TCRClustering">DOCS</a>
+    <span class="sd">&quot;&quot;&quot;Cluster the TCR clones by their CDR3 sequences</span>
+
+<span class="sd">    With GIANA</span>
+
+<span class="sd">    https://github.com/s175573/GIANA</span>
+
+<span class="sd">    &gt; Zhang, Hongyi, Xiaowei Zhan, and Bo Li.</span>
+<span class="sd">    &gt; &quot;GIANA allows computationally-efficient TCR clustering and multi-disease</span>
+<span class="sd">    &gt; repertoire classification by isometric transformation.&quot;</span>
+<span class="sd">    &gt; Nature communications 12.1 (2021): 1-11.</span>
+
+<span class="sd">    Or ClusTCR</span>
+
+<span class="sd">    https://github.com/svalkiers/clusTCR</span>
+
+<span class="sd">    &gt; Sebastiaan Valkiers, Max Van Houcke, Kris Laukens, Pieter Meysman,</span>
+<span class="sd">    &gt; ClusTCR: a Python interface for rapid clustering of large sets of CDR3</span>
+<span class="sd">    &gt; sequences with unknown antigen specificity,</span>
+<span class="sd">    &gt; Bioinformatics, 2021.</span>
+
+<span class="sd">    Input:</span>
+<span class="sd">        immfile: The immunarch object in RDS</span>
+
+<span class="sd">    Output:</span>
+<span class="sd">        immfile: The immnuarch object in RDS with TCR cluster information</span>
+<span class="sd">        clusterfile: The cluster file.</span>
+<span class="sd">            Columns are CDR3.aa, TCR_Cluster, V.name, Sample</span>
+<span class="sd">        heatmap: The heatmap of the samples, in terms of their shared</span>
+<span class="sd">            TCR Clusters</span>
+
+<span class="sd">    Envs:</span>
+<span class="sd">        tool: The tool used to do the clustering, either GIANA or ClusTCR</span>
+<span class="sd">            For GIANA, using TRBV mutations is not supported</span>
+<span class="sd">        on_raw: Whether to run clustering on raw seq or the seq read and</span>
+<span class="sd">            processed by immunarch</span>
+<span class="sd">        python: The path of python with `GIANA`&#39;s dependencies installed</span>
+<span class="sd">            or with `clusTCR` installed. Depending on the `tool` you choose.</span>
+<span class="sd">        tmpdir: The temporary directory to store the GIANA sources</span>
+<span class="sd">        giana_source: The URLs for the source code of GIANA</span>
+<span class="sd">        args: The arguments for the clustering tool</span>
+<span class="sd">            For GIANA, they will be passed to `python GIAna.py`</span>
+<span class="sd">            For ClusTCR, they will be passed to `clustcr.Clustering(...)`</span>
+<span class="sd">        heatmap_meta: The metadata to show in the heatmap for each sample</span>
+<span class="sd">            Current only support categorical/character metadata</span>
+<span class="sd">        numbers_on_heatmap: Whether to show the numbers on the heatmap</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">input</span> <span class="o">=</span> <span class="s2">&quot;immfile:file&quot;</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="s2">&quot;immfile:file:{{in.immfile | basename}}&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;clusterfile:file:{{in.immfile | stem}}.clusters.txt&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;heatmap:file:{{in.immfile | stem}}.heatmap.png&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+    <span class="n">lang</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">rscript</span>
+    <span class="n">envs</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;tool&quot;</span><span class="p">:</span> <span class="s2">&quot;GIANA&quot;</span><span class="p">,</span>  <span class="c1"># or ClusTCR</span>
+        <span class="s2">&quot;on_raw&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="s2">&quot;python&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">lang</span><span class="o">.</span><span class="n">python</span><span class="p">,</span>
+        <span class="s2">&quot;tmpdir&quot;</span><span class="p">:</span> <span class="n">config</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">tmpdir</span><span class="p">,</span>
+        <span class="s2">&quot;giana_source&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span>
+                <span class="s2">&quot;s175573/GIANA/master/GIANA4.1.py&quot;</span>
+            <span class="p">),</span>
+            <span class="s2">&quot;giana4&quot;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span>
+                <span class="s2">&quot;s175573/GIANA/master/GIANA4.py&quot;</span>
+            <span class="p">),</span>
+            <span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span>
+                <span class="s2">&quot;s175573/GIANA/master/query.py&quot;</span>
+            <span class="p">),</span>
+            <span class="s2">&quot;trbv&quot;</span><span class="p">:</span> <span class="p">(</span>
+                <span class="s2">&quot;https://raw.githubusercontent.com/&quot;</span>
+                <span class="s2">&quot;s175573/GIANA/master/Imgt_Human_TRBV.fasta&quot;</span>
+            <span class="p">),</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;heatmap_meta&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="s2">&quot;numbers_on_heatmap&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">script</span> <span class="o">=</span> <span class="s2">&quot;file://../scripts/tcr/TCRClustering.R&quot;</span>
+    <span class="n">plugin_opts</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;report&quot;</span><span class="p">:</span> <span class="s2">&quot;file://../reports/tcr/TCRClustering.svelte&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;report_toc&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="p">}</span>
+</code></pre></div>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.29db7785.min.js"></script>
+      
+        <script src="../../../js/mkapi.js"></script>
+      
+    
+  </body>
+</html>

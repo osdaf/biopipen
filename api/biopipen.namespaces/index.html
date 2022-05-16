@@ -1,0 +1,1529 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.2.3">
+    
+    
+      
+        <title>biopipen.namespaces - biopipen</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f7f47774.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#2094f3">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    
+      <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    
+      <link rel="stylesheet" href="../../css/mkapi-common.css">
+    
+      <link rel="stylesheet" href="../../style.css">
+    
+    
+      
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#biopipennamespaces" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="biopipen" class="md-header__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            biopipen
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              biopipen.namespaces
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="biopipen" class="md-nav__button md-logo" aria-label="biopipen" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    biopipen
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/pwwang/biopipen/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pwwang/biopipen
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Pipelines
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Pipelines" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Pipelines
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pipelines/scrna_metabolic/" class="md-nav__link">
+        scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      <label class="md-nav__link" for="__nav_3">
+        API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="API" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          API
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1" type="checkbox" id="__nav_3_1" >
+      
+      <label class="md-nav__link" for="__nav_3_1">
+        biopipen.core
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.core" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.core
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.core/" class="md-nav__link">
+        biopipen.core
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.core.defaults/" class="md-nav__link">
+        biopipen.core.defaults
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.core.config/" class="md-nav__link">
+        biopipen.core.config
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.core.proc/" class="md-nav__link">
+        biopipen.core.proc
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+      
+      <label class="md-nav__link" for="__nav_3_2">
+        biopipen.namespaces
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="biopipen.namespaces" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          biopipen.namespaces
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          biopipen.namespaces
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        biopipen.namespaces
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#biopipennamespaces" class="md-nav__link">
+    namespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="namespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacestcr" class="md-nav__link">
+    tcr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesgsea" class="md-nav__link">
+    gsea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesrnaseq" class="md-nav__link">
+    rnaseq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesscrna_metabolic" class="md-nav__link">
+    scrna_metabolic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesvcf" class="md-nav__link">
+    vcf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesweb" class="md-nav__link">
+    web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesmisc" class="md-nav__link">
+    misc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesbed" class="md-nav__link">
+    bed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesgene" class="md-nav__link">
+    gene
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesplot" class="md-nav__link">
+    plot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesbcftools" class="md-nav__link">
+    bcftools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesbam" class="md-nav__link">
+    bam
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesscrna" class="md-nav__link">
+    scrna
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacescsv" class="md-nav__link">
+    csv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.tcr/" class="md-nav__link">
+        biopipen.namespaces.tcr
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.gsea/" class="md-nav__link">
+        biopipen.namespaces.gsea
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.rnaseq/" class="md-nav__link">
+        biopipen.namespaces.rnaseq
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.scrna_metabolic/" class="md-nav__link">
+        biopipen.namespaces.scrna_metabolic
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.vcf/" class="md-nav__link">
+        biopipen.namespaces.vcf
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.web/" class="md-nav__link">
+        biopipen.namespaces.web
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.misc/" class="md-nav__link">
+        biopipen.namespaces.misc
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.bed/" class="md-nav__link">
+        biopipen.namespaces.bed
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.gene/" class="md-nav__link">
+        biopipen.namespaces.gene
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.plot/" class="md-nav__link">
+        biopipen.namespaces.plot
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.bcftools/" class="md-nav__link">
+        biopipen.namespaces.bcftools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.bam/" class="md-nav__link">
+        biopipen.namespaces.bam
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.scrna/" class="md-nav__link">
+        biopipen.namespaces.scrna
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biopipen.namespaces.csv/" class="md-nav__link">
+        biopipen.namespaces.csv
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        Change log
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#biopipennamespaces" class="md-nav__link">
+    namespaces
+  </a>
+  
+    <nav class="md-nav" aria-label="namespaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacestcr" class="md-nav__link">
+    tcr
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesgsea" class="md-nav__link">
+    gsea
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesrnaseq" class="md-nav__link">
+    rnaseq
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesscrna_metabolic" class="md-nav__link">
+    scrna_metabolic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesvcf" class="md-nav__link">
+    vcf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesweb" class="md-nav__link">
+    web
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesmisc" class="md-nav__link">
+    misc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesbed" class="md-nav__link">
+    bed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesgene" class="md-nav__link">
+    gene
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesplot" class="md-nav__link">
+    plot
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesbcftools" class="md-nav__link">
+    bcftools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesbam" class="md-nav__link">
+    bam
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacesscrna" class="md-nav__link">
+    scrna
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biopipennamespacescsv" class="md-nav__link">
+    csv
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/pwwang/biopipen/edit/master/docs/api/biopipen.namespaces.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>biopipen.namespaces</h1>
+                
+                <div class="mkapi-node" id="biopipen.namespaces">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object package plain top">
+    <div class="mkapi-object-kind package top">package</div>
+    <h2 id="biopipennamespaces" class="mkapi-object-body package top"><span class="mkapi-object-prefix">biopipen.</span><span class="mkapi-object-name">namespaces</span></h2>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces/#biopipen.namespaces" title="Source for biopipen.namespaces">&lt;/&gt;</a>
+  </div>
+</div>
+
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.tcr">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacestcr" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.tcr/#biopipen.namespaces.tcr">tcr</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr" title="Source for biopipen.namespaces.tcr">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Tools to analyze single-cell TCR sequencing data</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.ImmunarchLoading">ImmunarchLoading</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Immuarch - Loading data<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchLoading" title="Source for biopipen.namespaces.tcr.ImmunarchLoading">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.ImmunarchFilter">ImmunarchFilter</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Immunarch - Filter data<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchFilter" title="Source for biopipen.namespaces.tcr.ImmunarchFilter">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.ImmunarchBasic">ImmunarchBasic</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Immunarch - Basic statistics and clonality<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchBasic" title="Source for biopipen.namespaces.tcr.ImmunarchBasic">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.ImmunarchAdvanced">ImmunarchAdvanced</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Immunarch - Advanced analysis<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.ImmunarchAdvanced" title="Source for biopipen.namespaces.tcr.ImmunarchAdvanced">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.CloneResidency">CloneResidency</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Identification of clone residency<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.CloneResidency" title="Source for biopipen.namespaces.tcr.CloneResidency">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.Immunarch2VDJtools">Immunarch2VDJtools</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Convert immuarch format into VDJtools input formats<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.Immunarch2VDJtools" title="Source for biopipen.namespaces.tcr.Immunarch2VDJtools">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.VJUsage">VJUsage</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Circos-style V-J usage plot displaying the frequency ofvarious V-J junctions.
+<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.VJUsage" title="Source for biopipen.namespaces.tcr.VJUsage">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.Attach2Seurat">Attach2Seurat</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Attach the clonal information to a Seurat object as metadata<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.Attach2Seurat" title="Source for biopipen.namespaces.tcr.Attach2Seurat">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.tcr#biopipen.namespaces.tcr.TCRClustering">TCRClustering</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Cluster the TCR clones by their CDR3 sequences<a class="mkapi-src-link" href="../source/biopipen.namespaces.tcr/#biopipen.namespaces.tcr.TCRClustering" title="Source for biopipen.namespaces.tcr.TCRClustering">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.gsea">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesgsea" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.gsea/#biopipen.namespaces.gsea">gsea</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.gsea/#biopipen.namespaces.gsea" title="Source for biopipen.namespaces.gsea">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Gene set enrichment analysis</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.gsea#biopipen.namespaces.gsea.GSEA">GSEA</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Gene set enrichment analysis<a class="mkapi-src-link" href="../source/biopipen.namespaces.gsea/#biopipen.namespaces.gsea.GSEA" title="Source for biopipen.namespaces.gsea.GSEA">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.gsea#biopipen.namespaces.gsea.PreRank">PreRank</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">PreRank the genes for GSEA analysis<a class="mkapi-src-link" href="../source/biopipen.namespaces.gsea/#biopipen.namespaces.gsea.PreRank" title="Source for biopipen.namespaces.gsea.PreRank">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.gsea#biopipen.namespaces.gsea.FGSEA">FGSEA</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Gene set enrichment analysis using <code>fgsea</code><a class="mkapi-src-link" href="../source/biopipen.namespaces.gsea/#biopipen.namespaces.gsea.FGSEA" title="Source for biopipen.namespaces.gsea.FGSEA">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.gsea#biopipen.namespaces.gsea.Enrichr">Enrichr</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Gene set enrichment analysis using Enrichr<a class="mkapi-src-link" href="../source/biopipen.namespaces.gsea/#biopipen.namespaces.gsea.Enrichr" title="Source for biopipen.namespaces.gsea.Enrichr">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.rnaseq">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesrnaseq" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.rnaseq/#biopipen.namespaces.rnaseq">rnaseq</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.rnaseq/#biopipen.namespaces.rnaseq" title="Source for biopipen.namespaces.rnaseq">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>RNA-seq data analysis</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.rnaseq#biopipen.namespaces.rnaseq.UnitConversion">UnitConversion</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Convert expression value units back and forth<a class="mkapi-src-link" href="../source/biopipen.namespaces.rnaseq/#biopipen.namespaces.rnaseq.UnitConversion" title="Source for biopipen.namespaces.rnaseq.UnitConversion">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.scrna_metabolic">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesscrna_metabolic" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.scrna/#biopipen.namespaces.scrna_metabolic">scrna_metabolic</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna_metabolic/#biopipen.namespaces.scrna_metabolic" title="Source for biopipen.namespaces.scrna_metabolic">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Metabolic landscape analysis for scRNA-seq data</p><p>An abstract from https://github.com/LocasaleLab/Single-Cell-Metabolic-Landscape</p>
+<p>If you have clustering done somewhere else, you could use <code>replace_clustering()</code></p>
+<p>See docs here</p>
+<p>https://pwwang.github.io/biopipen/pipelines/scrna_metabolic</p>
+<p>Reference:
+    [1] Xiao, Zhengtao, Ziwei Dai, and Jason W. Locasale.
+    "Metabolic landscape of the tumor microenvironment at
+    single cell resolution." Nature communications 10.1 (2019): 1-12.</p>
+<p>Start Process:
+    MetabolicInputs</p>
+</div>
+    </div>
+  <div class="mkapi-section functions">
+      <div class="mkapi-section-name functions">
+          <span class="mkapi-section-name-body functions">Functions</span> 
+        </div>
+      <div class="mkapi-section-body functions"><ul class="mkapi-items">
+<li class="function"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna_metabolic#biopipen.namespaces.scrna_metabolic.build_processes">build_processes</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-signature">options</code><code class="mkapi-object-parenthesis">)</code>
+
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Build processes for metabolic landscape analysis pipeline<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna_metabolic/#biopipen.namespaces.scrna_metabolic.build_processes" title="Source for biopipen.namespaces.scrna_metabolic.build_processes">&lt;/&gt;</a></span></li>
+
+<li class="function"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna_metabolic#biopipen.namespaces.scrna_metabolic.metabolic_landscape">metabolic_landscape</a></code><code class="mkapi-object-parenthesis">(</code><code class="mkapi-object-parenthesis">)</code>
+<span class="mkapi-item-type">(Pipen)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Build a pipeline for <code>pipen run</code> to run<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna_metabolic/#biopipen.namespaces.scrna_metabolic.metabolic_landscape" title="Source for biopipen.namespaces.scrna_metabolic.metabolic_landscape">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.vcf">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesvcf" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.vcf/#biopipen.namespaces.vcf">vcf</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.vcf/#biopipen.namespaces.vcf" title="Source for biopipen.namespaces.vcf">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Tools to handle VCF files</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.vcf#biopipen.namespaces.vcf.VcfLiftOver">VcfLiftOver</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Liftover a VCF file using GATK<a class="mkapi-src-link" href="../source/biopipen.namespaces.vcf/#biopipen.namespaces.vcf.VcfLiftOver" title="Source for biopipen.namespaces.vcf.VcfLiftOver">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.vcf#biopipen.namespaces.vcf.VcfFilter">VcfFilter</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Filter records in vcf file<a class="mkapi-src-link" href="../source/biopipen.namespaces.vcf/#biopipen.namespaces.vcf.VcfFilter" title="Source for biopipen.namespaces.vcf.VcfFilter">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.vcf#biopipen.namespaces.vcf.VcfIndex">VcfIndex</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Index VCF files. If they are already index, use the index files<a class="mkapi-src-link" href="../source/biopipen.namespaces.vcf/#biopipen.namespaces.vcf.VcfIndex" title="Source for biopipen.namespaces.vcf.VcfIndex">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.vcf#biopipen.namespaces.vcf.VcfDownSample">VcfDownSample</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Down-sample VCF files to keep only a subset of variants in there<a class="mkapi-src-link" href="../source/biopipen.namespaces.vcf/#biopipen.namespaces.vcf.VcfDownSample" title="Source for biopipen.namespaces.vcf.VcfDownSample">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.web">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesweb" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.web/#biopipen.namespaces.web">web</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.web/#biopipen.namespaces.web" title="Source for biopipen.namespaces.web">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Get data from the web</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.web#biopipen.namespaces.web.Download">Download</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Download data from URLs<a class="mkapi-src-link" href="../source/biopipen.namespaces.web/#biopipen.namespaces.web.Download" title="Source for biopipen.namespaces.web.Download">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.web#biopipen.namespaces.web.DownloadList">DownloadList</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Base class for all processes in biopipen to subclass<a class="mkapi-src-link" href="../source/biopipen.namespaces.web/#biopipen.namespaces.web.DownloadList" title="Source for biopipen.namespaces.web.DownloadList">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.misc">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesmisc" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.misc/#biopipen.namespaces.misc">misc</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.misc/#biopipen.namespaces.misc" title="Source for biopipen.namespaces.misc">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Misc processes</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.misc#biopipen.namespaces.misc.File2Proc">File2Proc</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Accept a file and pass it down with a symbolic link<a class="mkapi-src-link" href="../source/biopipen.namespaces.misc/#biopipen.namespaces.misc.File2Proc" title="Source for biopipen.namespaces.misc.File2Proc">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.misc#biopipen.namespaces.misc.Glob2Dir">Glob2Dir</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Create symbolic links in output directory for the files givenby the glob pattern
+<a class="mkapi-src-link" href="../source/biopipen.namespaces.misc/#biopipen.namespaces.misc.Glob2Dir" title="Source for biopipen.namespaces.misc.Glob2Dir">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.misc#biopipen.namespaces.misc.Config2File">Config2File</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Write a configurationn in string to a configuration file<a class="mkapi-src-link" href="../source/biopipen.namespaces.misc/#biopipen.namespaces.misc.Config2File" title="Source for biopipen.namespaces.misc.Config2File">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.misc#biopipen.namespaces.misc.Str2File">Str2File</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Write the given string to a file<a class="mkapi-src-link" href="../source/biopipen.namespaces.misc/#biopipen.namespaces.misc.Str2File" title="Source for biopipen.namespaces.misc.Str2File">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.bed">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesbed" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.bed/#biopipen.namespaces.bed">bed</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.bed/#biopipen.namespaces.bed" title="Source for biopipen.namespaces.bed">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Tools to handle BED files</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.bed#biopipen.namespaces.bed.BedLiftOver">BedLiftOver</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Liftover a BED file using liftOver<a class="mkapi-src-link" href="../source/biopipen.namespaces.bed/#biopipen.namespaces.bed.BedLiftOver" title="Source for biopipen.namespaces.bed.BedLiftOver">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.gene">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesgene" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.gene/#biopipen.namespaces.gene">gene</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.gene/#biopipen.namespaces.gene" title="Source for biopipen.namespaces.gene">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Gene related processes</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.gene#biopipen.namespaces.gene.GeneNameConversion">GeneNameConversion</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Convert gene names back and forth using MyGeneInfo<a class="mkapi-src-link" href="../source/biopipen.namespaces.gene/#biopipen.namespaces.gene.GeneNameConversion" title="Source for biopipen.namespaces.gene.GeneNameConversion">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.plot">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesplot" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.plot/#biopipen.namespaces.plot">plot</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.plot/#biopipen.namespaces.plot" title="Source for biopipen.namespaces.plot">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Plotting data</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.plot#biopipen.namespaces.plot.VennDiagram">VennDiagram</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Plot Venn diagram<a class="mkapi-src-link" href="../source/biopipen.namespaces.plot/#biopipen.namespaces.plot.VennDiagram" title="Source for biopipen.namespaces.plot.VennDiagram">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.plot#biopipen.namespaces.plot.Heatmap">Heatmap</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Plot heatmaps using <code>ComplexHeatmap</code><a class="mkapi-src-link" href="../source/biopipen.namespaces.plot/#biopipen.namespaces.plot.Heatmap" title="Source for biopipen.namespaces.plot.Heatmap">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.bcftools">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesbcftools" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.bcftools/#biopipen.namespaces.bcftools">bcftools</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.bcftools/#biopipen.namespaces.bcftools" title="Source for biopipen.namespaces.bcftools">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>handling VCF files using bcftools</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.bcftools#biopipen.namespaces.bcftools.BcftoolsAnnotate">BcftoolsAnnotate</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Add or remove annotations from VCF files<a class="mkapi-src-link" href="../source/biopipen.namespaces.bcftools/#biopipen.namespaces.bcftools.BcftoolsAnnotate" title="Source for biopipen.namespaces.bcftools.BcftoolsAnnotate">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.bcftools#biopipen.namespaces.bcftools.BcftoolsFilter">BcftoolsFilter</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Apply fixed threshold filters to VCF files<a class="mkapi-src-link" href="../source/biopipen.namespaces.bcftools/#biopipen.namespaces.bcftools.BcftoolsFilter" title="Source for biopipen.namespaces.bcftools.BcftoolsFilter">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.bam">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesbam" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.bam/#biopipen.namespaces.bam">bam</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.bam/#biopipen.namespaces.bam" title="Source for biopipen.namespaces.bam">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Tools to process sam/bam/cram files</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.bam#biopipen.namespaces.bam.CNVpytor">CNVpytor</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Detect CNV using CNVpytor<a class="mkapi-src-link" href="../source/biopipen.namespaces.bam/#biopipen.namespaces.bam.CNVpytor" title="Source for biopipen.namespaces.bam.CNVpytor">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.bam#biopipen.namespaces.bam.ControlFREEC">ControlFREEC</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Detect CNVs using Control-FREEC<a class="mkapi-src-link" href="../source/biopipen.namespaces.bam/#biopipen.namespaces.bam.ControlFREEC" title="Source for biopipen.namespaces.bam.ControlFREEC">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.scrna">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacesscrna" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.scrna/#biopipen.namespaces.scrna">scrna</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna" title="Source for biopipen.namespaces.scrna">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Tools to analyze single-cell RNA</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.SeuratLoading">SeuratLoading</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Seurat - Loading data<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratLoading" title="Source for biopipen.namespaces.scrna.SeuratLoading">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.SeuratPreparing">SeuratPreparing</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Seurat - Loading and preparing data<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratPreparing" title="Source for biopipen.namespaces.scrna.SeuratPreparing">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.SeuratClustering">SeuratClustering</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Seurat - Determine the clusters<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratClustering" title="Source for biopipen.namespaces.scrna.SeuratClustering">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.GeneExpressionInvestigation">GeneExpressionInvestigation</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Investigation of expressions of genes of interest<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.GeneExpressionInvestigation" title="Source for biopipen.namespaces.scrna.GeneExpressionInvestigation">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.DimPlots">DimPlots</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Seurat - Dimensional reduction plots<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.DimPlots" title="Source for biopipen.namespaces.scrna.DimPlots">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.MarkersFinder">MarkersFinder</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Find markers between different groups of cells<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.MarkersFinder" title="Source for biopipen.namespaces.scrna.MarkersFinder">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.SCImpute">SCImpute</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Impute the dropout values in scRNA-seq data.<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SCImpute" title="Source for biopipen.namespaces.scrna.SCImpute">&lt;/&gt;</a></span></li>
+
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.scrna#biopipen.namespaces.scrna.SeuratFilter">SeuratFilter</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Filtering cells from a seurat object<a class="mkapi-src-link" href="../source/biopipen.namespaces.scrna/#biopipen.namespaces.scrna.SeuratFilter" title="Source for biopipen.namespaces.scrna.SeuratFilter">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="mkapi-node" id="biopipen.namespaces.csv">
+<div class='mkapi-object-container'>
+  <div class="mkapi-object module plain top">
+    <div class="mkapi-object-kind module top">module</div>
+    <h3 id="biopipennamespacescsv" class="mkapi-object-body module top"><span class="mkapi-object-prefix"><a href="#biopipen.namespaces">biopipen.namespaces</a>.</span><span class="mkapi-object-name"><a href="../biopipen.namespaces.csv/#biopipen.namespaces.csv">csv</a></span></h3>
+  </div>
+  <div class="mkapi-src-link">
+    <a class="mkapi-src-link" href="../source/biopipen.namespaces.csv/#biopipen.namespaces.csv" title="Source for biopipen.namespaces.csv">&lt;/&gt;</a>
+  </div>
+</div>
+<div class="mkapi-docstring">
+<div class="mkapi-section">
+      <div class="mkapi-section-body"><p>Tools to deal with csv/tsv files</p></div>
+    </div>
+  <div class="mkapi-section classes">
+      <div class="mkapi-section-name classes">
+          <span class="mkapi-section-name-body classes">Classes</span> 
+        </div>
+      <div class="mkapi-section-body classes"><ul class="mkapi-items">
+<li class="class"><code class="mkapi-item-name"><a href="../biopipen.namespaces.csv#biopipen.namespaces.csv.BindRows">BindRows</a></code>
+<span class="mkapi-item-type">(<a href="../biopipen.core.proc/#biopipen.core.proc.Proc">Proc</a>)</span>
+<span class="mkapi-item-dash">&mdash;</span> <span class="mkapi-item-description">Bind rows of input files<a class="mkapi-src-link" href="../source/biopipen.namespaces.csv/#biopipen.namespaces.csv.BindRows" title="Source for biopipen.namespaces.csv.BindRows">&lt;/&gt;</a></span></li>
+
+
+</ul></div>
+    </div>
+  </div>
+
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../biopipen.core.proc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: biopipen.core.proc" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              biopipen.core.proc
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../biopipen.namespaces.tcr/" class="md-footer__link md-footer__link--next" aria-label="Next: biopipen.namespaces.tcr" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              biopipen.namespaces.tcr
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.709b4209.min.js", "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.29db7785.min.js"></script>
+      
+        <script src="../../js/mkapi.js"></script>
+      
+    
+  </body>
+</html>
